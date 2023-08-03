@@ -128,7 +128,7 @@ export default function Survey() {
           <hr className="my-4" />
           <div>
             <h2 className="text-xl font-bold">校園道路</h2>
-            <p>請選擇自入校，您使用校園道路的時間。</p>
+            <p>請選擇自入校以來，您使用校園道路的時間。</p>
             <ul className="grid w-full gap-6 md:grid-cols-3 my-2">
               <li>
                 <input
