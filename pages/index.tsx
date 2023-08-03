@@ -45,8 +45,8 @@ export default function Survey() {
                     <div className="w-full">學校的一員</div>
                   </div>
                   <svg
-                    width="24"
-                    height="25"
+                    width="35"
+                    height="36"
                     viewBox="0 0 24 25"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -75,8 +75,8 @@ export default function Survey() {
                     <div className="w-full">老師、職員</div>
                   </div>
                   <svg
-                    width="24"
-                    height="25"
+                    width="35"
+                    height="36"
                     viewBox="0 0 24 25"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -105,8 +105,8 @@ export default function Survey() {
                     <div className="w-full">計畫參訪、臨時到訪</div>
                   </div>
                   <svg
-                    width="24"
-                    height="25"
+                    width="35"
+                    height="36"
                     viewBox="0 0 24 25"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
