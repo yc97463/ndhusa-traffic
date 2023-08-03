@@ -38,12 +38,13 @@ div > p {
 .selection {
 }
 
-.description p {
-  @apply my-4;
+.description p,
+.description .list {
+  @apply my-4 text-gray-800 dark:text-gray-300;
 }
 
 .description .list {
-  @apply list-decimal pl-7 my-2;
+  @apply pl-7 my-2;
 }
 
 .description .list li {
