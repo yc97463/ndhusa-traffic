@@ -485,7 +485,7 @@ export default function Survey() {
                   >
                     <div className="block">
                       <div className="w-full text-lg font-semibold">滑板車</div>
-                      <div className="w-full">滑板車</div>
+                      <div className="w-full">滑板車、電動滑板車</div>
                     </div>
                     <svg
                       width="40"
