@@ -346,6 +346,22 @@ export default function Survey() {
           </div>
           <hr className="my-4" />
           <div>
+            <h2 className="text-xl font-bold">有意見的地點？</h2>
+            <p className="text-gray-500">
+              請在地圖上拖曳至您有意見的地點，可以是您覺得不安全的地方，或是您覺得有改善空間的地方。
+            </p>
+            <div className="flex flex-col space-y-2 my-2">
+              <label className="inline-flex items-center">
+                <input
+                  type="text"
+                  className="form-input"
+                  placeholder="請輸入文字"
+                />
+              </label>
+            </div>
+          </div>
+          <hr className="my-4" />
+          <div>
             <h2 className="text-xl font-bold">您的所使用的運具？</h2>
             <p className="text-gray-500">請選擇您的所使用的運具。</p>
             <div className="flex flex-col space-y-2 my-2">
@@ -563,22 +579,6 @@ export default function Survey() {
                   </label>
                 </li>
               </ul>
-            </div>
-          </div>
-          <hr className="my-4" />
-          <div>
-            <h2 className="text-xl font-bold">有意見的地點？</h2>
-            <p className="text-gray-500">
-              請在地圖上拖曳至您有意見的地點，可以是您覺得不安全的地方，或是您覺得有改善空間的地方。
-            </p>
-            <div className="flex flex-col space-y-2 my-2">
-              <label className="inline-flex items-center">
-                <input
-                  type="text"
-                  className="form-input"
-                  placeholder="請輸入文字"
-                />
-              </label>
             </div>
           </div>
           <hr className="my-4" />
