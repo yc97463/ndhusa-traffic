@@ -23,6 +23,10 @@ export default function Survey() {
           name="description"
           content="這份問卷的主要目的是收集學生對於校園內路線、交通設施以及行人與交通安全等相關議題的意見和建議。"
         />
+        <meta
+          name="og:image"
+          content="https://unsplash.com/photos/jIdKrtJF8Uk/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MzN8fHJvYWR8ZW58MHx8fHwxNjkxMDI5OTE5fDA&w=480"
+        />
       </Head>
       <div className="container">
         <div className="w-full h-64 bg-slate-300 bg-cover bg-bottom bg-[url('https://unsplash.com/photos/jIdKrtJF8Uk/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MzN8fHJvYWR8ZW58MHx8fHwxNjkxMDI5OTE5fDA&w=480')] md:rounded-t-md rounded-none"></div>
