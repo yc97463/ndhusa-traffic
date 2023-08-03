@@ -20,6 +20,7 @@
   @apply mx-auto;
   max-width: 800px;
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .form-input,
