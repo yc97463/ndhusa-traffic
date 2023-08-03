@@ -644,7 +644,7 @@ export default function Survey() {
           </div>
           <hr className="my-4" />
           <div>
-            <h2 className="text-xl font-bold">陳情內容</h2>
+            <h2 className="text-xl font-bold">撰寫建言</h2>
             <p>
               請填寫您的意見，例如：您覺得這裡不安全，或是您覺得這裡有改善空間。
             </p>
