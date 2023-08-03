@@ -29,8 +29,8 @@ export default function Survey() {
           </div>
           <hr className="my-4" />
           <div>
-            <h2 className="text-xl font-bold">您的身份為何？</h2>
-            <p>請填寫您的身份。</p>
+            <h2 className="text-xl font-bold">您的身份</h2>
+            <p>請選擇您在國立東華大學的身份。</p>
             <ul className="grid w-full gap-6 md:grid-cols-3 my-2">
               <li>
                 <input
@@ -127,10 +127,8 @@ export default function Survey() {
           </div>
           <hr className="my-4" />
           <div>
-            <h2 className="text-xl font-bold">
-              您已經使用校園道路多久時間了？
-            </h2>
-            <p>請選擇您已經使用校園道路多久時間了。</p>
+            <h2 className="text-xl font-bold">校園道路</h2>
+            <p>請選擇自入校，您使用校園道路的時間。</p>
             <ul className="grid w-full gap-6 md:grid-cols-3 my-2">
               <li>
                 <input
@@ -239,8 +237,8 @@ export default function Survey() {
           </div>
           <hr className="my-4" />
           <div>
-            <h2 className="text-xl font-bold">您的年齡？</h2>
-            <p>請填寫您的年齡。</p>
+            <h2 className="text-xl font-bold">年齡</h2>
+            <p>請填入您的年齡。</p>
             <div className="flex flex-col space-y-2 my-2">
               <label className="inline-flex items-center">
                 <input
@@ -255,8 +253,8 @@ export default function Survey() {
           </div>
           <hr className="my-4" />
           <div>
-            <h2 className="text-xl font-bold">您的自我認同性別？</h2>
-            <p>請填寫您的性別。</p>
+            <h2 className="text-xl font-bold">自我認同的性別</h2>
+            <p>請選擇您的性別。</p>
             <ul className="grid w-full gap-6 md:grid-cols-3 my-2 selection">
               <li>
                 <input
@@ -319,16 +317,16 @@ export default function Survey() {
           </div>
           <hr className="my-4" />
           <div>
-            <h2 className="text-xl font-bold">有意見的地點？</h2>
+            <h2 className="text-xl font-bold">陳情地點</h2>
             <p>
-              請在地圖上拖曳至您有意見的地點，可以是您覺得不安全的地方，或是您覺得有改善空間的地方。
+              請在地圖上拖曳至您有建議的地點，可以是您覺得不安全的地方，或是您覺得有改善空間的地方。
             </p>
             <Placeholder />
           </div>
           <hr className="my-4" />
           <div>
-            <h2 className="text-xl font-bold">您的所使用的運具？</h2>
-            <p>請選擇在這個問題地點，通常使用的運具。</p>
+            <h2 className="text-xl font-bold">使用運具</h2>
+            <p>請選擇在該地點，您通常使用的運具。</p>
             <div className="flex flex-col space-y-2 my-2">
               <ul className="grid w-full gap-6 md:grid-cols-2 my-2">
                 <li>
@@ -548,8 +546,8 @@ export default function Survey() {
           </div>
           <hr className="my-4" />
           <div>
-            <h2 className="text-xl font-bold">該地點分類？</h2>
-            <p>請您為該地點的意見分類。</p>
+            <h2 className="text-xl font-bold">案件分類</h2>
+            <p>請為該建議內容及地點選擇一個分類。</p>
             <ul className="grid w-full gap-6 md:grid-cols-2 my-2">
               <li>
                 <input
@@ -681,9 +679,9 @@ export default function Survey() {
           </div>
           <hr className="my-4" />
           <div>
-            <h2 className="text-xl font-bold">您對該地點的意見？</h2>
+            <h2 className="text-xl font-bold">陳情內容</h2>
             <p>
-              請填寫您有意見的原因，例如：您覺得這裡不安全，或是您覺得這裡有改善空間。
+              請填寫您的意見，例如：您覺得這裡不安全，或是您覺得這裡有改善空間。
             </p>
             <div className="flex flex-col space-y-2 my-2">
               <label className="inline-flex items-center">
