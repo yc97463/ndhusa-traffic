@@ -1,4 +1,5 @@
 import Placeholder from "@/components/placeholder";
+import Head from "next/head";
 import { useEffect, useState } from "react";
 
 export default function Survey() {
@@ -16,6 +17,9 @@ export default function Survey() {
 
   return (
     <>
+      <Head>
+        <title>國立東華大學學生會 - 東華校園用路意見調查</title>
+      </Head>
       <div className="container">
         <div className="w-full h-64 bg-slate-300 bg-cover bg-bottom bg-[url('https://unsplash.com/photos/jIdKrtJF8Uk/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MzN8fHJvYWR8ZW58MHx8fHwxNjkxMDI5OTE5fDA&w=480')] md:rounded-t-md rounded-none"></div>
         <div className="p-6">
