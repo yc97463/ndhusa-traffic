@@ -28,7 +28,7 @@ export default function Survey() {
           </h1>
           <div>
             <p className="my-2">
-              <strong>油成</strong>您好！{" "}
+              <strong>油成</strong>您好！
               <a className="text-sky-500">（不是您嗎？）</a>
             </p>
             <p>
