@@ -70,14 +70,6 @@ export default function Survey() {
           </div>
           <hr className="my-4" />
           <div>
-            <h2 className="text-xl font-bold">歡迎</h2>
-            <p>
-              這份問卷包含數個問題，填寫時間約為 3 分鐘。
-              請您就日常使用東華校園道路的經驗，回答以下數個問題：
-            </p>
-          </div>
-          <hr className="my-4" />
-          <div>
             <h2 className="text-xl font-bold">您的身份</h2>
             <p>請選擇您在國立東華大學的身份。</p>
             <ul className="grid w-full gap-6 md:grid-cols-3 my-2">
