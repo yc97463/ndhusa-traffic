@@ -1,3 +1,5 @@
+import Placeholder from "@/components/placeholder";
+
 export default function Survey() {
   return (
     <>
@@ -321,11 +323,7 @@ export default function Survey() {
             <p>
               請在地圖上拖曳至您有意見的地點，可以是您覺得不安全的地方，或是您覺得有改善空間的地方。
             </p>
-            <div className="w-full h-96 my-2 rounded-lg bg-neutral-200">
-              <div className="flex h-full">
-                <div className="m-auto">尚未完工</div>
-              </div>
-            </div>
+            <Placeholder />
           </div>
           <hr className="my-4" />
           <div>
