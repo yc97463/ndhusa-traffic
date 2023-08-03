@@ -363,9 +363,9 @@ export default function Survey() {
           <div>
             <h2 className="text-xl font-bold">陳情地點</h2>
             <p>
-              請在地圖上拖曳至您有建議的地點，可以是您覺得不安全的地方，或是您覺得有改善空間的地方。
+              請在拖曳地圖並點選您有建議的地點，可以是您覺得不安全的地方，或是您覺得有改善空間的地方。
             </p>
-            <Placeholder />
+            <Map />
           </div>
           <hr className="my-4" />
           <div>
