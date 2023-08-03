@@ -734,13 +734,27 @@ export default function Survey() {
             </div>
           </div>
 
-          <hr className="my-4" />
-          <div>
+          <hr className="my-4 border-0" />
+          <div className="flex items-center justify-center">
             <button
               onClick={() => openDialogBox("還沒寫完QAQ")}
-              className="px-4 py-2 font-semibold text-sm bg-white text-slate-700 border border-slate-300 rounded-md shadow-sm hover:ring-2 hover:ring-offset-2 hover:ring-offset-slate-50 hover:ring-blue-500/50 active:hover:ring-blue-500 dark:ring-offset-slate-900 dark:bg-slate-700 dark:text-slate-200 dark:border-transparent"
+              className="mx-auto w-32 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800"
             >
-              送出
+              <div className="flex items-center justify-center space-x-2">
+                <span className="text-lg">送件</span>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 20V4L22 12L3 20ZM5 17L16.85 12L5 7V10.5L11 12L5 13.5V17Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
             </button>
             {dialog && (
               <div
