@@ -213,7 +213,7 @@ export default function Survey() {
                 >
                   <div className="block">
                     <div className="w-full text-lg font-semibold">超過五年</div>
-                    <div className="w-full">延畢生、教職員</div>
+                    <div className="w-full">延修生、教職員</div>
                   </div>
                   <svg
                     width="48"
