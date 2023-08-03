@@ -1,4 +1,5 @@
 import Placeholder from "@/components/placeholder";
+import Map from "@/components/map";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 
