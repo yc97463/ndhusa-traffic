@@ -352,15 +352,7 @@ export default function Survey() {
             <p className="text-gray-500">
               請在地圖上拖曳至您有意見的地點，可以是您覺得不安全的地方，或是您覺得有改善空間的地方。
             </p>
-            <div className="flex flex-col space-y-2 my-2">
-              <label className="inline-flex items-center">
-                <input
-                  type="text"
-                  className="form-input"
-                  placeholder="請輸入文字"
-                />
-              </label>
-            </div>
+            <div className="w-full h-96 my-2 rounded-lg bg-neutral-200"></div>
           </div>
           <hr className="my-4" />
           <div>
