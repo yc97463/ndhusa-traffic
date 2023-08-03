@@ -715,9 +715,15 @@ export default function Survey() {
               送出
             </button>
             {dialog && (
-              <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full bg-black bg-opacity-50 transition-all">
-                <div>
-                  {dialog.content}
+              <div
+                className="fixed inset-0 z-50 flex items-center justify-center w-full h-full bg-black bg-opacity-50 transition-all cursor-pointer"
+                onClick={closeDialogBox}
+              >
+                <div
+                  onClick={(e) => e.stopPropagation()}
+                  className="cursor-auto"
+                >
+                  <Placeholder content={dialog.content} />
                   <button
                     onClick={() => closeDialogBox()}
                     className="absolute top-0 right-0 p-4"
