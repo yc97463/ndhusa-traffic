@@ -1,8 +1,8 @@
 export default function Survey() {
   return (
     <>
-      <div className="container bg-gray-100 rounded-md border border-slate-300 dark:bg-gray-800 dark:border-gray-700">
-        <div className="w-full h-64 bg-slate-300 bg-cover bg-bottom bg-[url('https://unsplash.com/photos/jIdKrtJF8Uk/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MzN8fHJvYWR8ZW58MHx8fHwxNjkxMDI5OTE5fDA&w=480')] rounded-t-md"></div>
+      <div className="container">
+        <div className="w-full h-64 bg-slate-300 bg-cover bg-bottom bg-[url('https://unsplash.com/photos/jIdKrtJF8Uk/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MzN8fHJvYWR8ZW58MHx8fHwxNjkxMDI5OTE5fDA&w=480')] md:rounded-t-md rounded-none"></div>
         <div className="p-6">
           <h1 className="text-2xl font-bold dark:text-white">
             東華校園用路意見調查

@@ -17,10 +17,8 @@
 }
 
 .container {
-  @apply mx-auto;
+  @apply mx-auto md:my-[4rem] my-0 md:rounded-md rounded-none md:border md:border-slate-300 md:dark:border-gray-700 bg-gray-100 dark:bg-gray-800;
   max-width: 800px;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
 }
 
 .form-input,
@@ -37,4 +35,5 @@ div > p {
   @apply text-gray-500 dark:text-gray-300;
 }
 
-.selection;
+.selection {
+}
