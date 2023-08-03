@@ -37,3 +37,15 @@ div > p {
 
 .selection {
 }
+
+.description p {
+  @apply my-4;
+}
+
+.description .list {
+  @apply list-decimal pl-7 my-2;
+}
+
+.description .list li {
+  @apply my-2;
+}
