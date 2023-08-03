@@ -524,7 +524,7 @@ export default function Survey() {
                   >
                     <div className="block">
                       <div className="w-full text-lg font-semibold">其他</div>
-                      <div className="w-full">被載</div>
+                      <div className="w-full">不在上述運具中</div>
                     </div>
                     <svg
                       width="40"
@@ -534,10 +534,9 @@ export default function Survey() {
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M4 20V4H6V20H4ZM11 8V4H13V8H11ZM11 14V10H13V14H11ZM11 20V16H13V20H11Z"
+                        d="M7.45 17.45L6.05 16.05L9.075 13H2V11H9.075L6.05 7.94999L7.45 6.54999L12.9 12L7.45 17.45ZM13 17V15H22V17H13ZM13 8.99999V6.99999H22V8.99999H13ZM16 13V11H22V13H16Z"
                         fill="currentColor"
                       />
-                      <path d="M18 4V20H20V4H18Z" fill="currentColor" />
                     </svg>
                   </label>
                 </li>
