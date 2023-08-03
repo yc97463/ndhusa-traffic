@@ -11,7 +11,7 @@ export default function Survey() {
           </h1>
           <div>
             <p className="my-2">
-              歡迎<strong>油成</strong>！{" "}
+              <strong>油成</strong>您好！{" "}
               <a className="text-sky-500">（不是您嗎？）</a>
             </p>
             <p>
@@ -23,8 +23,8 @@ export default function Survey() {
           <div>
             <h2 className="text-xl font-bold">歡迎</h2>
             <p>
-              這份問卷只有兩個問題，填寫時間約為 1 分鐘。
-              請您就日常生活中的東華校園用路，回答以下數個問題：
+              這份問卷包含數個問題，填寫時間約為 3 分鐘。
+              請您就日常使用東華校園道路的經驗，回答以下數個問題：
             </p>
           </div>
           <hr className="my-4" />
