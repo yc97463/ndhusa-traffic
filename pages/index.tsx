@@ -601,7 +601,7 @@ export default function Survey() {
                 >
                   <div className="block">
                     <div className="w-full text-lg font-semibold">道路規劃</div>
-                    <div className="w-full">轉角設計、路口清晰度</div>
+                    <div className="w-full">轉角設計、路口行車清晰度</div>
                   </div>
                   <svg
                     width="40"
@@ -631,7 +631,7 @@ export default function Survey() {
                 >
                   <div className="block">
                     <div className="w-full text-lg font-semibold">標線設計</div>
-                    <div className="w-full">標線運用合適直覺與否</div>
+                    <div className="w-full">行穿線、標線運用合適直覺與否</div>
                   </div>
                   <svg
                     width="40"
@@ -648,6 +648,70 @@ export default function Survey() {
                   </svg>
                 </label>
               </li>
+              <li>
+                <input
+                  type="radio"
+                  id="footwalk"
+                  name="category"
+                  value="footwalk"
+                  className="hidden peer"
+                />
+                <label
+                  htmlFor="footwalk"
+                  className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div className="block">
+                    <div className="w-full text-lg font-semibold">人行空間</div>
+                    <div className="w-full">人行道、行人徒步空間</div>
+                  </div>
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 6V4H18V5.5H17L16 6ZM4 20V4H6V20H4ZM10 8V4H12V8H10ZM10 14V10H12V14H10ZM10 20V16H12V20H10Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M14.3875 22.55C14.9792 23.1833 15.725 23.5 16.625 23.5C17.9083 23.5 18.8792 23.025 19.5375 22.075C20.1958 21.125 20.5167 20.0583 20.5 18.875L20.95 18.175C21.1333 17.8917 21.4375 17.2542 21.8625 16.2625C22.2875 15.2708 22.5 14.0167 22.5 12.5C22.5 10.7833 22.075 9.35417 21.225 8.2125C20.375 7.07083 19.3 6.5 18 6.5C16.5833 6.5 15.4792 7.12917 14.6875 8.3875C13.8958 9.64583 13.5 11.0167 13.5 12.5C13.5 13.4667 13.6333 14.3583 13.9 15.175C14.1667 15.9917 14.4 16.65 14.6 17.15L14.4 17.475C14.2667 17.7083 14.0833 18.0792 13.85 18.5875C13.6167 19.0958 13.5 19.625 13.5 20.175C13.5 21.125 13.7958 21.9167 14.3875 22.55Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="category-other"
+                  name="category"
+                  value="category-other"
+                  className="hidden peer"
+                />
+                <label
+                  htmlFor="category-other"
+                  className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div className="block">
+                    <div className="w-full text-lg font-semibold">其他</div>
+                    <div className="w-full">不在上述分類中</div>
+                  </div>
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.45 17.45L6.05 16.05L9.075 13H2V11H9.075L6.05 7.94999L7.45 6.54999L12.9 12L7.45 17.45ZM13 17V15H22V17H13ZM13 8.99999V6.99999H22V8.99999H13ZM16 13V11H22V13H16Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </label>
+              </li>
             </ul>
           </div>
           <hr className="my-4" />
@@ -661,6 +725,7 @@ export default function Survey() {
                 <textarea
                   className="form-textarea"
                   placeholder="請輸入文字"
+                  rows="4"
                 ></textarea>
               </label>
             </div>
