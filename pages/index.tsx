@@ -47,7 +47,7 @@ export default function Survey() {
                 >
                   <div className="block">
                     <div className="w-full text-lg font-semibold">學生</div>
-                    <div className="w-full">學校的主人翁</div>
+                    <div className="w-full">東華的主人翁</div>
                   </div>
                   <svg
                     width="35"
