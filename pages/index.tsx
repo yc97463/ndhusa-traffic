@@ -1,6 +1,19 @@
 import Placeholder from "@/components/placeholder";
+import { useEffect, useState } from "react";
 
 export default function Survey() {
+  interface Dialog {
+    content: string;
+  }
+
+  const [dialog, setDialog] = useState<Dialog | null>(null);
+  const openDialogBox = (dialogContent: string) => {
+    setDialog({ content: dialogContent });
+  };
+  const closeDialogBox = () => {
+    setDialog(null);
+  };
+
   return (
     <>
       <div className="container">
@@ -695,9 +708,25 @@ export default function Survey() {
 
           <hr className="my-4" />
           <div>
-            <button className="px-4 py-2 font-semibold text-sm bg-white text-slate-700 border border-slate-300 rounded-md shadow-sm hover:ring-2 hover:ring-offset-2 hover:ring-offset-slate-50 hover:ring-blue-500/50 active:hover:ring-blue-500 dark:ring-offset-slate-900 dark:bg-slate-700 dark:text-slate-200 dark:border-transparent ">
+            <button
+              onClick={() => openDialogBox("還沒寫完QAQ")}
+              className="px-4 py-2 font-semibold text-sm bg-white text-slate-700 border border-slate-300 rounded-md shadow-sm hover:ring-2 hover:ring-offset-2 hover:ring-offset-slate-50 hover:ring-blue-500/50 active:hover:ring-blue-500 dark:ring-offset-slate-900 dark:bg-slate-700 dark:text-slate-200 dark:border-transparent"
+            >
               送出
             </button>
+            {dialog && (
+              <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full bg-black bg-opacity-50 transition-all">
+                <div>
+                  {dialog.content}
+                  <button
+                    onClick={() => closeDialogBox()}
+                    className="absolute top-0 right-0 p-4"
+                  >
+                    關掉窩
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
