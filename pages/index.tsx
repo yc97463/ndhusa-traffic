@@ -1,23 +1,26 @@
 export default function Survey() {
   return (
     <>
-      <div className="container bg-gray-100 rounded-md border border-slate-300">
-        {/* This is a survey */}
-        {/* Put a banner image here */}
+      <div className="container bg-gray-100 rounded-md border border-slate-300 dark:bg-gray-800 dark:border-gray-700">
         <div className="w-full h-64 bg-slate-300 bg-cover bg-bottom bg-[url('https://unsplash.com/photos/jIdKrtJF8Uk/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MzN8fHJvYWR8ZW58MHx8fHwxNjkxMDI5OTE5fDA&w=480')] rounded-t-md"></div>
         <div className="p-6">
-          <h1 className="text-2xl font-bold">東華校園用路意見調查</h1>
-          <p className="text-gray-500 my-2">
-            歡迎<strong>油成</strong>！{" "}
-            <a className="text-sky-500">（不是您嗎？）</a>
-            <br />
-            這是一份簡單問卷，我們想知道您對東華校園用路的看法。
-            您的回答將會匿名紀錄，並且不會被用於任何商業用途。請放心填寫。
-          </p>
+          <h1 className="text-2xl font-bold dark:text-white">
+            東華校園用路意見調查
+          </h1>
+          <div>
+            <p className="my-2">
+              歡迎<strong>油成</strong>！{" "}
+              <a className="text-sky-500">（不是您嗎？）</a>
+            </p>
+            <p>
+              這是一份簡單問卷，我們想知道您對東華校園用路的看法。
+              您的回答將會匿名紀錄，並且不會被用於任何商業用途。請放心填寫。
+            </p>
+          </div>
           <hr className="my-4" />
           <div>
             <h2 className="text-xl font-bold">歡迎</h2>
-            <p className="text-gray-500">
+            <p>
               這份問卷只有兩個問題，填寫時間約為 1 分鐘。
               請您就日常生活中的東華校園用路，回答以下數個問題：
             </p>
@@ -25,7 +28,7 @@ export default function Survey() {
           <hr className="my-4" />
           <div>
             <h2 className="text-xl font-bold">您的身份為何？</h2>
-            <p className="text-gray-500">請填寫您的身份。</p>
+            <p>請填寫您的身份。</p>
             <ul className="grid w-full gap-6 md:grid-cols-3 my-2">
               <li>
                 <input
@@ -125,9 +128,7 @@ export default function Survey() {
             <h2 className="text-xl font-bold">
               您已經使用校園道路多久時間了？
             </h2>
-            <p className="text-gray-500">
-              請選擇您已經使用校園道路多久時間了。
-            </p>
+            <p>請選擇您已經使用校園道路多久時間了。</p>
             <ul className="grid w-full gap-6 md:grid-cols-3 my-2">
               <li>
                 <input
@@ -143,7 +144,7 @@ export default function Survey() {
                   className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
                 >
                   <div className="block">
-                    <div className="w-full text-lg font-semibold">小於一年</div>
+                    <div className="w-full text-lg font-semibold">少於一年</div>
                     <div className="w-full">新生、新職員、訪客</div>
                   </div>
                   <svg
@@ -173,22 +174,26 @@ export default function Survey() {
                   className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
                 >
                   <div className="block">
-                    <div className="w-full text-lg font-semibold">大約三年</div>
+                    <div className="w-full text-lg font-semibold">三年左右</div>
                     <div className="w-full">舊生、教職員</div>
                   </div>
                   <svg
-                    width="49"
-                    height="38"
-                    viewBox="0 0 49 38"
+                    width="68"
+                    height="37"
+                    viewBox="0 0 68 37"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M11.5 37.5C8.30001 37.5 5.73335 36.5667 3.80001 34.7C1.90001 32.8333 0.950012 30.3167 0.950012 27.15H4.25001C4.25001 29.4167 4.91668 31.2167 6.25001 32.55C7.58335 33.8833 9.33335 34.55 11.5 34.55C13.6667 34.55 15.4167 33.8833 16.75 32.55C18.0833 31.2167 18.75 29.4167 18.75 27.15V24.15C18.75 21.95 18.1 20.2167 16.8 18.95C15.5 17.6833 13.7333 17.05 11.5 17.05H8.10001V14.2L17.7 3.5H2.10001V0.5H21.35V3.6L12 14.15C15.0667 14.25 17.5 15.2 19.3 17C21.1333 18.7667 22.05 21.15 22.05 24.15V27.15C22.05 30.3167 21.0833 32.8333 19.15 34.7C17.25 36.5667 14.7 37.5 11.5 37.5Z"
+                      d="M0.649988 37V34L13.4 20.45C16.6667 16.9833 18.3 13.6167 18.3 10.35C18.3 8.11666 17.6167 6.31667 16.25 4.95C14.9167 3.58333 13.1167 2.9 10.85 2.9C8.58332 2.9 6.76666 3.6 5.39999 5C4.03332 6.36667 3.34999 8.18333 3.34999 10.45H0.0499878C0.0833212 8.35 0.549988 6.51667 1.44999 4.95C2.34999 3.38333 3.59999 2.16666 5.19999 1.3C6.83332 0.433332 8.71666 0 10.85 0C13.0167 0 14.9 0.433332 16.5 1.3C18.1333 2.13333 19.4 3.33333 20.3 4.9C21.2 6.46667 21.65 8.28333 21.65 10.35C21.65 12.2167 21.15 14.1833 20.15 16.25C19.1833 18.2833 17.6833 20.35 15.65 22.45L4.64999 34H22.15V37H0.649988Z"
                       fill="currentColor"
                     />
                     <path
-                      d="M35.5805 32.1V21.9H25.7805V18.95H35.5805V8.75H38.8805V18.95H48.6805V21.9H38.8805V32.1H35.5805Z"
+                      d="M26.7305 21.95V19H42.7305V21.95H26.7305Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M64.0609 37V28.7H47.4109V22.9L61.3109 0.549998H65.0109L50.7109 23.7V25.7H64.0609V16H67.3609V37H64.0609Z"
                       fill="currentColor"
                     />
                   </svg>
@@ -233,7 +238,7 @@ export default function Survey() {
           <hr className="my-4" />
           <div>
             <h2 className="text-xl font-bold">您的年齡？</h2>
-            <p className="text-gray-500">請填寫您的年齡。</p>
+            <p>請填寫您的年齡。</p>
             <div className="flex flex-col space-y-2 my-2">
               <label className="inline-flex items-center">
                 <input
@@ -248,9 +253,9 @@ export default function Survey() {
           </div>
           <hr className="my-4" />
           <div>
-            <h2 className="text-xl font-bold">您的性別？</h2>
-            <p className="text-gray-500">請填寫您的性別。</p>
-            <ul className="grid w-full gap-6 md:grid-cols-3 my-2">
+            <h2 className="text-xl font-bold">您的自我認同性別？</h2>
+            <p>請填寫您的性別。</p>
+            <ul className="grid w-full gap-6 md:grid-cols-3 my-2 selection">
               <li>
                 <input
                   type="radio"
@@ -268,18 +273,6 @@ export default function Survey() {
                     <div className="w-full text-lg font-semibold">男性</div>
                     <div className="w-full">Male</div>
                   </div>
-                  <svg
-                    width="38"
-                    height="38"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9.99999 22L8.29999 9.275C8.21666 8.675 8.37499 8.14583 8.77499 7.6875C9.17499 7.22917 9.67499 7 10.275 7H13.725C14.325 7 14.825 7.22917 15.225 7.6875C15.625 8.14583 15.7833 8.675 15.7 9.275L14 22H9.99999ZM12 6C11.45 6 10.9792 5.80417 10.5875 5.4125C10.1958 5.02083 9.99999 4.55 9.99999 4C9.99999 3.45 10.1958 2.97917 10.5875 2.5875C10.9792 2.19583 11.45 2 12 2C12.55 2 13.0208 2.19583 13.4125 2.5875C13.8042 2.97917 14 3.45 14 4C14 4.55 13.8042 5.02083 13.4125 5.4125C13.0208 5.80417 12.55 6 12 6Z"
-                      fill="currentColor"
-                    />
-                  </svg>
                 </label>
               </li>
               <li>
@@ -298,18 +291,6 @@ export default function Survey() {
                     <div className="w-full text-lg font-semibold">女性</div>
                     <div className="w-full">Female</div>
                   </div>
-                  <svg
-                    width="38"
-                    height="38"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 22V16H7L10.05 8.3C10.2167 7.9 10.475 7.58333 10.825 7.35C11.175 7.11667 11.5667 7 12 7C12.4333 7 12.825 7.11667 13.175 7.35C13.525 7.58333 13.7833 7.9 13.95 8.3L17 16H14V22H10ZM12 6C11.45 6 10.9792 5.80417 10.5875 5.4125C10.1958 5.02083 10 4.55 10 4C10 3.45 10.1958 2.97917 10.5875 2.5875C10.9792 2.19583 11.45 2 12 2C12.55 2 13.0208 2.19583 13.4125 2.5875C13.8042 2.97917 14 3.45 14 4C14 4.55 13.8042 5.02083 13.4125 5.4125C13.0208 5.80417 12.55 6 12 6Z"
-                      fill="currentColor"
-                    />
-                  </svg>
                 </label>
               </li>
               <li>
@@ -330,18 +311,6 @@ export default function Survey() {
                     </div>
                     <div className="w-full">Other</div>
                   </div>
-                  <svg
-                    width="50"
-                    height="50"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 7.5C11.5167 7.5 11.1042 7.32917 10.7625 6.9875C10.4208 6.64583 10.25 6.23333 10.25 5.75C10.25 5.26667 10.4208 4.85417 10.7625 4.5125C11.1042 4.17083 11.5167 4 12 4C12.4833 4 12.8958 4.17083 13.2375 4.5125C13.5792 4.85417 13.75 5.26667 13.75 5.75C13.75 6.23333 13.5792 6.64583 13.2375 6.9875C12.8958 7.32917 12.4833 7.5 12 7.5ZM10 20V15H9V10.5C9 9.95 9.19583 9.47917 9.5875 9.0875C9.97917 8.69583 10.45 8.5 11 8.5H13C13.55 8.5 14.0208 8.69583 14.4125 9.0875C14.8042 9.47917 15 9.95 15 10.5V15H14V20H10Z"
-                      fill="currentColor"
-                    />
-                  </svg>
                 </label>
               </li>
             </ul>
@@ -349,7 +318,7 @@ export default function Survey() {
           <hr className="my-4" />
           <div>
             <h2 className="text-xl font-bold">有意見的地點？</h2>
-            <p className="text-gray-500">
+            <p>
               請在地圖上拖曳至您有意見的地點，可以是您覺得不安全的地方，或是您覺得有改善空間的地方。
             </p>
             <div className="w-full h-96 my-2 rounded-lg bg-neutral-200"></div>
@@ -357,7 +326,7 @@ export default function Survey() {
           <hr className="my-4" />
           <div>
             <h2 className="text-xl font-bold">您的所使用的運具？</h2>
-            <p className="text-gray-500">請選擇您的所使用的運具。</p>
+            <p>請選擇在這個問題地點，通常使用的運具。</p>
             <div className="flex flex-col space-y-2 my-2">
               <ul className="grid w-full gap-6 md:grid-cols-2 my-2">
                 <li>
@@ -578,7 +547,7 @@ export default function Survey() {
           <hr className="my-4" />
           <div>
             <h2 className="text-xl font-bold">該地點分類？</h2>
-            <p className="text-gray-500">請您為該地點的意見分類。</p>
+            <p>請您為該地點的意見分類。</p>
             <ul className="grid w-full gap-6 md:grid-cols-2 my-2">
               <li>
                 <input
@@ -711,7 +680,7 @@ export default function Survey() {
           <hr className="my-4" />
           <div>
             <h2 className="text-xl font-bold">您對該地點的意見？</h2>
-            <p className="text-gray-500">
+            <p>
               請填寫您有意見的原因，例如：您覺得這裡不安全，或是您覺得這裡有改善空間。
             </p>
             <div className="flex flex-col space-y-2 my-2">
