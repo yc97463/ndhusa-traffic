@@ -725,7 +725,7 @@ export default function Survey() {
                 <textarea
                   className="form-textarea"
                   placeholder="請輸入文字"
-                  rows="4"
+                  rows={4}
                 ></textarea>
               </label>
             </div>
