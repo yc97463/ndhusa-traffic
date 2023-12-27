@@ -5,6 +5,13 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  container: {
+    padding: "1rem",
+    center: true,
+    screens: {
+      xl: "1024px",
+    },
+  },
   theme: {
     extend: {
       backgroundImage: {

@@ -16,8 +16,8 @@
   }
 }
 
-.container {
-  @apply mx-auto md:my-[4rem] my-0 md:rounded-md rounded-none md:border md:border-slate-300 md:dark:border-gray-700 bg-gray-100 dark:bg-gray-800;
+.survay-container {
+  @apply mx-auto md:my-[4rem] my-0 md:rounded-md rounded-none md:border md:border-slate-300 md:dark:border-gray-700 bg-gray-100 dark:bg-gray-800 dark:text-white;
   max-width: 800px;
 }
 
@@ -26,12 +26,12 @@
   @apply block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm;
 }
 
-h1,
-h2 {
+.survay-container h1,
+.survay-container h2 {
   @apply dark:text-white;
 }
 
-div > p {
+.survay-container div > p {
   @apply text-gray-500 dark:text-gray-300;
 }
 
