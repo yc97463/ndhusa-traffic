@@ -1,6 +1,5 @@
 import { redirect } from 'next/navigation';
 
-export default async function GoLanding({ }) {
+export default async function GoLanding() {
     redirect('/landing');
-  // ...
 }
