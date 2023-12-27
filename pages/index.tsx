@@ -16,12 +16,9 @@ export default function Dashboard() {
                         <div className="container h-[calc(60vh)] mx-auto flex items-center">
                             <div className="text-center w-full">
                                 <h1 className="text-white text-[22px] sm:text-[25px] md:text-[35px] lg:text-[45px]">
-                                    Hold on, we are still working on the dashboard.
+                                    🚀 Hold on, we are still working on the dashboard.
                                 </h1>
-                                <p className="text-white md:text-[20px]">Please check back later.</p>
-                                <p className="md:text-[20px] my-6 text-zinc-400">
-                                    - National Dong Hwa University Student Association -
-                                </p>
+                                <p className="text-white md:text-[20px]">Please check back later. ✨</p>
                             </div>
                         </div>
                     </div>
