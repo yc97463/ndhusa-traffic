@@ -1,6 +1,15 @@
+import Head from "next/head"
+
 export default function Dashboard() {
     return (
         <div>
+            <Head>
+                <title>東華學生會議題百寶箱</title>
+                <link rel="shortcut icon" href="https://dhsa.ndhu.edu.tw/var/file/110/1110/msys_1110_5263550_18764.png" type="image/x-icon" />
+                <link rel="icon" href="https://dhsa.ndhu.edu.tw/var/file/110/1110/msys_1110_5263550_18764.png" type="image/x-icon" />
+                <link rel="bookmark" href="https://dhsa.ndhu.edu.tw/var/file/110/1110/msys_1110_5263550_18764.png" type="image/x-icon" />
+                <link rel="apple-touch-icon-precomposed" href="https://dhsa.ndhu.edu.tw/var/file/110/1110/msys_1110_5263550_18764.png"></link>
+            </Head>
             <div className="bg-[#3D5674]">
                 <div className="content-auto bg-[url('/img/ndhu-lib-tower.jpeg')] bg-bottom bg-no-repeat bg-cover rounded-bl-[300px]">
                     <div className="h-[calc(85vh)]">
