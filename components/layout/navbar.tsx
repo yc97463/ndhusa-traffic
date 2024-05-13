@@ -7,9 +7,9 @@ function Navbar() {
         <nav>
             <div className="flex justify-between items-center h-24 w-[100vw-24px] mx-auto lg:max-w-[1440px] ">
                 <div className="title">
-                    <a href="/">
+                    <Link href="/">
                         <Image src="/img/logo-and-title.svg" alt="logo" width={289} height={31} />
-                    </a>
+                    </Link>
                 </div>
                 <div>
                     <Link href="https://github.com/yc97463/ndhusa13th-dashboard">Github</Link>
