@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Navbar() {
     return (
@@ -11,7 +12,7 @@ function Navbar() {
                     </a>
                 </div>
                 <div>
-                    <a href="https://github.com/yc97463/ndhusa13th-dashboard">Github</a>
+                    <Link href="https://github.com/yc97463/ndhusa13th-dashboard">Github</Link>
                 </div>
             </div>
         </nav>

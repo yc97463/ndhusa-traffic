@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Footer() {
     return (
@@ -11,8 +12,8 @@ function Footer() {
                     </a>
                 </div>
                 <div>
-                    <a href="https://imych.one">❤️ by @yc97463</a>
-                    <a href="https://github.com/yc97463/ndhusa13th-dashboard">Github</a>
+                    <Link href="https://imych.one">❤️ by @yc97463</Link>
+                    <Link href="https://github.com/yc97463/ndhusa13th-dashboard">Github</Link>
                 </div>
             </div>
         </nav>
