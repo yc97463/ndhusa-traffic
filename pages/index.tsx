@@ -17,6 +17,9 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://dashboard.dhsa.ndhu.me" />
         <meta property="og:image" content="/img/og.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="/img/og.jpg" />
+        <meta property="telegram_channel" content="turbolabit" />
         <meta property="og:description" content="東華學生會第 13 屆學權議題儀表板" />
         <meta property="og:site_name" content="東華學生會議題百寶箱" />
         <meta property="og:locale" content="zh_TW" />
