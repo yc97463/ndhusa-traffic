@@ -1,6 +1,7 @@
 import Footer from "@/components/layout/footer";
 import Navbar from "@/components/layout/navbar";
 import Head from "next/head";
+import ProjectCard from "@/components/project/card";
 import Divide from "@/components/divide";
 
 export default function Home() {
@@ -62,54 +63,9 @@ export default function Home() {
       <div className="container mx-auto my-8">
         <h1 className="text-3xl text-center my-4">我們的議題</h1>
         <div className="issue grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="card">
-            <h2>宿舍登記表單</h2>
-            <p className="hashtag">#宿舍 #調查</p>
-            <div className="grid grid-cols-1">
-              <p className="progress">57% 完成</p>
-              {/* progress bar */}
-            </div>
-          </div>
-          <div className="card">
-            <h2>宿舍登記表單</h2>
-            <p className="hashtag">#宿舍 #調查</p>
-            <div className="grid grid-cols-1">
-              <p className="progress">57% 完成</p>
-              {/* progress bar */}
-            </div>
-          </div>
-          <div className="card">
-            <h2>宿舍登記表單</h2>
-            <p className="hashtag">#宿舍 #調查</p>
-            <div className="grid grid-cols-1">
-              <p className="progress">57% 完成</p>
-              {/* progress bar */}
-            </div>
-          </div>
-          <div className="card">
-            <h2>宿舍登記表單</h2>
-            <p className="hashtag">#宿舍 #調查</p>
-            <div className="grid grid-cols-1">
-              <p className="progress">57% 完成</p>
-              {/* progress bar */}
-            </div>
-          </div>
-          <div className="card">
-            <h2>宿舍登記表單</h2>
-            <p className="hashtag">#宿舍 #調查</p>
-            <div className="grid grid-cols-1">
-              <p className="progress">57% 完成</p>
-              {/* progress bar */}
-            </div>
-          </div>
-          <div className="card">
-            <h2>宿舍登記表單</h2>
-            <p className="hashtag">#宿舍 #調查</p>
-            <div className="grid grid-cols-1">
-              <p className="progress">57% 完成</p>
-              {/* progress bar */}
-            </div>
-          </div>
+          {Array.from({ length: 6 }).map((_, index) => (
+            <ProjectCard title="宿舍登記表單" hashtag="#宿舍 #調查" progress={57} imgSrc="/img/og.jpg" href="dormitory" key={index} />
+          ))}
         </div>
       </div>
       <Footer />
