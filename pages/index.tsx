@@ -1,10 +1,26 @@
 import Footer from "@/components/layout/footer";
 import Navbar from "@/components/layout/navbar";
+import Head from "next/head";
 
 export default function Home() {
 
   return (
-    <div className="">
+    <div>
+      <Head>
+        <title>第 13 屆學權議題儀表板 - 東華學生會議題百寶箱</title>
+        <link rel="shortcut icon" href="/img/ndhusa-logo-favicon.png" type="image/x-icon" />
+        <link rel="icon" href="/img/ndhusa-logo-favicon.png" type="image/x-icon" />
+        <link rel="bookmark" href="/img/ndhusa-logo-favicon.png" type="image/x-icon" />
+        <link rel="apple-touch-icon-precomposed" href="/img/ndhusa-logo-favicon.png"></link>
+        {/* ogimage */}
+        <meta property="og:title" content="第 13 屆學權議題儀表板 - 東華學生會議題百寶箱" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://dashboard.dhsa.ndhu.me" />
+        <meta property="og:image" content="/img/og.jpg" />
+        <meta property="og:description" content="東華學生會第 13 屆學權議題儀表板" />
+        <meta property="og:site_name" content="東華學生會議題百寶箱" />
+        <meta property="og:locale" content="zh_TW" />
+      </Head>
       <Navbar />
       <div className="container mx-auto intro">
         <p>東華學生會</p>
