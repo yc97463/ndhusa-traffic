@@ -1,6 +1,7 @@
 import Footer from "@/components/layout/footer";
 import Navbar from "@/components/layout/navbar";
 import Head from "next/head";
+import Divide from "@/components/divide";
 
 export default function Home() {
 
@@ -57,6 +58,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Divide />
       <div className="container mx-auto my-8">
         <h1 className="text-3xl text-center my-4">我們的議題</h1>
         <div className="issue grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
