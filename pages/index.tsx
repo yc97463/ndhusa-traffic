@@ -10,11 +10,7 @@ export default function Home() {
     <div>
       <Head>
         <title>第 13 屆學權議題儀表板 - 東華學生會議題百寶箱</title>
-        <link rel="shortcut icon" href="/img/ndhusa-logo-favicon.png" type="image/x-icon" />
-        <link rel="icon" href="/img/ndhusa-logo-favicon.png" type="image/x-icon" />
-        <link rel="bookmark" href="/img/ndhusa-logo-favicon.png" type="image/x-icon" />
-        <link rel="apple-touch-icon-precomposed" href="/img/ndhusa-logo-favicon.png"></link>
-
+        
         {/* meta */}
         <meta property="og:title" content="第 13 屆學權議題儀表板 - 東華學生會議題百寶箱" />
         <meta property="og:type" content="website" />
