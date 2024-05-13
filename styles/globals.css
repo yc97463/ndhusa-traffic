@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -49,4 +49,82 @@
 
 .description .list li {
   @apply my-2;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  @apply bg-ivory;
+}
+
+.noto-sans {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.noto-serif {
+  font-family: "Noto Serif TC", serif;
+}
+
+.ibm-plex-sans {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.ibm-plex-sans-condensed {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+}
+
+.pt-sans {
+  font-family: "PT Sans", sans-serif;
+}
+
+.container {
+  @apply mx-auto;
+  max-width: 1220px;
+}
+
+nav .title {
+  @apply flex justify-center items-center;
+}
+
+nav .title, nav a {
+  @apply text-xl font-bold text-gray mx-4;
+  font-family: "PT Sans", "Noto Sans TC", sans-serif;
+}
+
+.intro {
+  @apply text-3xl text-center my-8 leading-normal font-bold noto-serif md:text-4xl lg:text-5xl;
+}
+
+h1 {
+  @apply font-bold noto-serif;
+}
+
+.highlight h2 {
+  @apply text-2xl font-bold text-center mt-2 mb-1 lg:mb-2 lg:mt-4 lg:text-3xl;
+  font-family: "PT Sans", "Noto Sans TC", sans-serif;
+}
+
+.highlight .big-number {
+  @apply text-6xl font-bold text-center mt-1 ibm-plex-sans md:mt-2 md:text-7xl lg:mt-4 lg:text-8xl;
+}
+
+.highlight .hashtag {
+  @apply text-center text-lg lg:text-2xl;
+}
+
+.hashtag {
+  @apply font-light noto-sans;
+}
+
+.issue .card {
+  /* @apply bg-white p-8 my-4; */
+  @apply bg-white p-8 my-0 mx-4 min-h-fit lg:mx-0 lg:h-64;
+}
+
+.issue .card h2 {
+  @apply text-2xl font-bold noto-serif;
+}
+
+.issue .card .progress {
+  @apply mt-12 mb-2 text-xl ibm-plex-sans-condensed;
 }
