@@ -27,12 +27,7 @@ export default function Home() {
         <meta property="og:site_name" content="東華學生會議題百寶箱" />
         <meta property="og:locale" content="zh_TW" />
 
-        {/* Google Fonts */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
       </Head>
-      <Navbar />
       <div className="container mx-auto intro">
         <p>東華學生會</p>
         <p>第 13 屆學權議題儀表板</p>
@@ -63,12 +58,11 @@ export default function Home() {
       <div className="container mx-auto my-8">
         <h1 className="text-3xl text-center my-4">我們的議題</h1>
         <div className="issue grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {Array.from({ length: 6 }).map((_, index) => (
+          {Array.from({ length: 9 }).map((_, index) => (
             <ProjectCard title="宿舍登記表單" hashtag="#宿舍 #調查" progress={57} imgSrc="/img/og.jpg" href="dormitory" key={index} />
           ))}
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
