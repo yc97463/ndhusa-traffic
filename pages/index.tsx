@@ -45,7 +45,7 @@ export default function Home() {
             </div>
           </div>
           <div className="card">
-            <h2>熱度標籤</h2>
+            <h2>熱門標籤</h2>
             <p className="hashtag">#宿舍 #選舉 #遠距教學 #地震</p>
           </div>
           <div className="card">
