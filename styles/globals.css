@@ -107,7 +107,7 @@ h1 {
 }
 
 .highlight .hashtag {
-  @apply text-center text-lg lg:text-2xl;
+  @apply text-center text-base lg:text-2xl;
 }
 
 .hashtag {
@@ -116,13 +116,17 @@ h1 {
 
 .issue .card {
   /* @apply bg-white p-8 my-4; */
-  @apply bg-white p-8 my-0 mx-4 min-h-fit lg:mx-0 lg:h-64;
+  @apply bg-white p-8 my-0 mx-4 min-h-fit lg:mx-0 lg:min-h-full;
 }
 
 .issue .card h2 {
-  @apply text-2xl font-bold noto-serif;
+  @apply text-2xl font-bold noto-sans;
+}
+
+.issue .card img {
+  @apply w-full h-auto my-4;
 }
 
 .issue .card .progress {
-  @apply mt-12 mb-2 text-xl ibm-plex-sans-condensed;
+  @apply my-4 text-xl ibm-plex-sans-condensed;
 }
