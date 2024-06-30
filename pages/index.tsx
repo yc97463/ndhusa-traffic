@@ -4,7 +4,16 @@ import Head from "next/head";
 import ProjectCard from "@/components/project/card";
 import Divide from "@/components/divide";
 
-export default function Home() {
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+function TransferToLanding() {
+  useEffect(() => {
+    window.location.href = "/landing";
+  }, []);
+  return null;
+}
+
+function Home() {
 
   return (
     <div>
@@ -61,4 +70,15 @@ export default function Home() {
       </div>
     </div>
   );
+}
+
+export default function MainComponent() {
+  const router = useRouter();
+  const domain = typeof window !== 'undefined' ? window.location.hostname : '';
+
+  if (domain === 'dashboard.dhsa.ndhu.me') {
+    return <TransferToLanding />;
+  }
+
+  return <Home />;
 }
