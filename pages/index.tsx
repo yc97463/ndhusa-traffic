@@ -165,12 +165,12 @@ export async function getStaticProps() {
 }
 
 function MainComponent({ columns, rows }: Props) {
-  const router = useRouter();
-  const domain = typeof window !== 'undefined' ? window.location.hostname : '';
+  // const router = useRouter();
+  // const domain = typeof window !== 'undefined' ? window.location.hostname : '';
 
-  if (domain === 'dashboard.dhsa.ndhu.me') {
-    return <TransferToLanding />;
-  }
+  // if (domain === 'dashboard.dhsa.ndhu.me') {
+  //   return <TransferToLanding />;
+  // }
 
   return <Home columns={columns} rows={rows} />;
 }
