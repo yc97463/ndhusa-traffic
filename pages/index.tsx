@@ -6,6 +6,7 @@ import Divide from "@/components/divide";
 
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
+
 function TransferToLanding() {
   useEffect(() => {
     window.location.href = "/landing";
@@ -13,13 +14,62 @@ function TransferToLanding() {
   return null;
 }
 
-function Home() {
+type Project = {
+  title: string,
+  hashtag: string,
+  progress: number,
+  imgSrc: string,
+  href: string,
+};
+
+type Column = {
+  id: string;
+  label: string;
+  type: string;
+};
+
+type Cell = {
+  v: string | number | boolean | null;
+  f?: string;
+};
+
+type Row = {
+  c: Cell[];
+};
+
+type Props = {
+  columns: Column[];
+  rows: Row[];
+};
+
+function Home({ columns, rows }: Props) {
+  const calculateProgress = (row: Row) => {
+    let totalProcesses = 0;
+    let completedProcesses = 0;
+
+    for (let i = 10; i < row.c.length; i += 2) {
+      if (row.c[i] && row.c[i + 1]) {
+        totalProcesses += 1;
+        if (row.c[i + 1].v === true) {
+          completedProcesses += 1;
+        }
+      }
+    }
+
+    if (totalProcesses === 0) return 0;
+    // return the number under point 1.
+    return Math.round((completedProcesses / totalProcesses) * 100);
+  };
+
+  const extractDriveFileId = (url: string): string => {
+    const match = url.match(/\/d\/([a-zA-Z0-9_-]+)/);
+    return match ? match[1] : '';
+  };
 
   return (
     <div>
       <Head>
         <title>第 13 屆學權議題儀表板 - 東華學生會議題百寶箱</title>
-        
         {/* meta */}
         <meta property="og:title" content="第 13 屆學權議題儀表板 - 東華學生會議題百寶箱" />
         <meta property="og:type" content="website" />
@@ -31,7 +81,6 @@ function Home() {
         <meta property="og:description" content="東華學生會第 13 屆學權議題儀表板" />
         <meta property="og:site_name" content="東華學生會議題百寶箱" />
         <meta property="og:locale" content="zh_TW" />
-
       </Head>
       <div className="container mx-auto intro">
         <p>東華學生會</p>
@@ -63,8 +112,23 @@ function Home() {
       <div className="container mx-auto my-8">
         <h1 className="text-3xl text-center my-4">我們的議題</h1>
         <div className="issue grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {Array.from({ length: 9 }).map((_, index) => (
-            <ProjectCard title="宿舍登記表單" hashtag="#宿舍 #調查" progress={57} imgSrc="/img/og.jpg" href="dormitory" key={index} />
+          {rows.map((row, index) => (
+            index === 0 ? null :
+              row.c[0]?.v === undefined ? null :
+                (
+                  <>
+                    <ProjectCard
+                      key={index}
+                      title={`${row.c[4]?.v as string}`}
+                      topic={row.c[3]?.v as string}
+                      hashtag={row.c[2]?.v as string || ""}
+                      describe={row.c[5]?.v as string || ""}
+                      progress={calculateProgress(row)}
+                      imgSrc={row.c[7]?.v ? `https://drive.google.com/thumbnail?sz=w1000&id=${extractDriveFileId(row.c[7].v as string)}` : "/img/og.jpg"}
+                      href={index + ""}
+                    />
+                  </>
+                )
           ))}
         </div>
       </div>
@@ -72,7 +136,35 @@ function Home() {
   );
 }
 
-export default function MainComponent() {
+export async function getStaticProps() {
+  // Fetch the JSON data from the public directory
+  const spreadsheetLink = "https://docs.google.com/spreadsheets/d/1SaAa77bJkx-tYoYzwJS_U0FrIHe8rNiabxkOAdUBAH8/gviz/tq?tqx=out:json&tq&gid=0";
+  // const res = await fetch(`${process.env.SITE_DOMAIN}/sheet.json`);
+  const res = await fetch(spreadsheetLink);
+  const text = await res.text();
+
+  // Extract JSON from the response format
+  const match = text.match(/google.visualization.Query.setResponse\((.*)\);/);
+  if (!match || match.length < 2) {
+    throw new Error("Invalid response format");
+  }
+
+  const jsonString = match[1];
+  const json = JSON.parse(jsonString);
+
+  const columns = json.table.cols;
+  const rows = json.table.rows;
+
+
+  return {
+    props: {
+      columns,
+      rows,
+    },
+  };
+}
+
+function MainComponent({ columns, rows }: Props) {
   const router = useRouter();
   const domain = typeof window !== 'undefined' ? window.location.hostname : '';
 
@@ -80,5 +172,7 @@ export default function MainComponent() {
     return <TransferToLanding />;
   }
 
-  return <Home />;
+  return <Home columns={columns} rows={rows} />;
 }
+
+export default MainComponent;
